@@ -10,7 +10,7 @@ const projectContent = {
             {
                 projectName: 'Search Download & Train',
                 projectDescription: 'This python program makes use of different libraries but mainly uses tkinter as GUI and'+
-                '${libraryname} as to train the machine. User needs to provide its own Google API-key and Google Custom Search'+
+                'tensorflow to train the machine. User needs to provide its own Google API-key and Google Custom Search'+
                 ' Engine ID in order to login to application. Then the user can adjust the search settings as they wish before bulk'+
                 ' downloading the images. After the download process has finished the program automatically locks itself from further'+
                 ' search and begins to training process. The training process time completely depends on the amount of images that will'+

@@ -79,7 +79,7 @@ const Projects = () => {
                   <Col className="col-xxl-4 d-xl-block ">
                     <Container>
                       <h5>
-                        <a href={`https://www.${project.link}`} className="text-white-50" target='_blank'> {project.link} </a>
+                        <a href={`https://www.${project.link}`} className="text-white-50" target='_blank' rel='noreferrer'> {project.link} </a>
                       </h5>
                     </Container>            
                   </Col>

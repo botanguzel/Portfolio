@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Badge, Stack, Button, ButtonGroup } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 // TextContent.js
 const homeContent = {

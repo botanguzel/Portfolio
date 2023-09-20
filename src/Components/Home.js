@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { homeContent, PythonSection, JavaSection, HtmlSection } from './Contents/homeContent'; // Adjust the path to your TextContent.js file
 import VerticalCarousel from './VerticalCarousel';
 import '../Styles/home.css';
-import { Container, Row, Col, Card, Badge, Stack, Button, ButtonGroup } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
