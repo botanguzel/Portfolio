@@ -1,0 +1,16 @@
+/* Home.css */
+.img-container {
+    border-radius: 50%;
+    overflow: hidden; /* Clip the image overflow within the container */
+    max-width: 100%;
+  }
+  .img-zoom {
+    height: 440px;
+  }
+  .img-container img {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  }
+  
+  .img-container:hover img {
+    transform: scale(1.15); /* Apply a zoom effect to the image on hover */
+  }
