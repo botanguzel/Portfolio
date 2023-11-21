@@ -5,24 +5,15 @@ const VerticalCarousel = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const handleScroll = (event) => {
-      // Determine the scroll direction
-      if (event.deltaY > 0) {
-        // Scrolling down, go to the next item
-        setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
-      } else {
-        // Scrolling up, go to the previous item
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? items.length - 1 : prevIndex - 1));
-      }
-    };
-    // Add a scroll event listener to the component
-    document.addEventListener('wheel', handleScroll);
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
+    }, 3000); // Change 3000 to your desired interval in milliseconds
 
-    // Clean up the event listener when the component unmounts
+    // Clean up the interval when the component unmounts
     return () => {
-      document.removeEventListener('wheel', handleScroll);
+      clearInterval(intervalId);
     };
-  }, [items]); // Empty dependency array to run the effect only once
+  }, [items]);
 
   return (
     <div className="vertical-carousel">
