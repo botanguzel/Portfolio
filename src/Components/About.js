@@ -165,7 +165,7 @@ const About = () => {
             <Accordion activeKey={activeAccordionKey} onSelect={handleAccordionChange}>
               <Card className={isAccordionActive('3')}>
                 <Card.Header>
-                  <CustomToggle eventKey="3"> <i className={aboutContent.Education.icon}/> {aboutContent.End.title} </CustomToggle>
+                  <CustomToggle eventKey="3"> <i className={aboutContent.End.icon}/> {aboutContent.End.title} </CustomToggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="3">
                   <Card.Body>{aboutContent.End.description}

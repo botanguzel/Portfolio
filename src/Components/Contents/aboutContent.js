@@ -22,12 +22,6 @@ const aboutContent = {
             description: 'Basically I follow instructions from the teachers and take initiativ when needed. The main goal is to help'+
             ' students when their teacher is not present and make the teachers days easier when they return.',
         },
-        {
-            title: 'Assistant at Korvgubben',
-            period: 'September 2022 - August 2023',
-            description: 'As a chef I would follow recipes closely and serve the food in accordance with the restaurant\'s serving'+
-            'guidelines. I would work with a welcoming and energetic spirit to achieve the highest level of customer service.',
-        },
       ],
     },
     Education: {
@@ -62,7 +56,7 @@ const aboutContent = {
     },
     End: {
         title: 'Coding Skills',
-        icon: '',
+        icon: 'bi bi-code-slash',
         description: 'This shows my coding skills at each and every programming language that I have used or can use. It is color'+
         ' coordinated (blue = beginner, green = intermediate, red = advanced)',
     },
