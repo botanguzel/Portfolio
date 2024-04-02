@@ -22,6 +22,11 @@ const aboutContent = {
             description: 'Basically I follow instructions from the teachers and take initiativ when needed. The main goal is to help'+
             ' students when their teacher is not present and make the teachers days easier when they return.',
         },
+        {
+            title: 'Server Admin, Freelancer',
+            period: 'May 2021 - Augusti 2021',
+            description: 'Created and administrated the database of a game, that was hosted privately, for a short term.'
+        }
       ],
     },
     Education: {
