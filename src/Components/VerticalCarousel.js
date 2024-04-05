@@ -7,9 +7,7 @@ const VerticalCarousel = ({ items }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
-    }, 3000); // Change 3000 to your desired interval in milliseconds
-
-    // Clean up the interval when the component unmounts
+    }, 3000);
     return () => {
       clearInterval(intervalId);
     };

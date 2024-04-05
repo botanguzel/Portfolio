@@ -36,11 +36,11 @@ const homeContent = {
           description: 'It is a CLI-application for simulating customers in a supermarket. However, the simulation and the '+
           'supermarket parts are written clearly to achieve to use simulator in another application if needed.',
         },
-        {
+       /* {
           title: 'Calculator',
           description: 'A calculator application that demonstrates how to use GUI together with a state class that can prevent '+
           'changes on the GUI if necessary.',
-        },
+        },*/
       ],
     },
     html: {
@@ -48,7 +48,7 @@ const homeContent = {
       icon: 'bi-filetype-html',
       items: [
         {
-          title: 'BirCözum.com',
+          title: 'OneSolution',
           description: 'A website built with HTML, JS and PHP and uses Python for automation of certain functions. Users can add'+
           '/remove/edit complaints or suggestions for a town. Every complaint and suggestion are shown clearly on a Google Map that'+
           ' is implemented on the different parts of the website.',
