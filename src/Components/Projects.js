@@ -17,6 +17,16 @@ const Projects = () => {
   return (
     <div className='bg-dark'>
       <Container className='gx-5'>
+        <Container className='gx5'>
+          <div className='d-flex flex-wrap flex-row justify-content-start'>
+            <div class="my-5 text-center text-xl-start">
+              <p class="fw-bolder lead text-white mb-4">
+                {projectContent.description}
+                <a href={`${projectContent.link}`} className="text-white-50" target='_blank' rel='noreferrer'>GitHub page. </a>
+              </p>
+            </div>
+          </div>
+        </Container>
         <div className='d-flex flex-wrap flex-row justify-content-start'>
           <ToggleButtonGroup type='radio' name='projects' value={activeContainer} onChange={handleButton}>
             <ToggleButton size='lg' className='btn-outline-dark btn-secondary' id='python' value={1}> {projectContent.python.name} </ToggleButton>
@@ -79,7 +89,7 @@ const Projects = () => {
                   <Col className="col-xxl-4 d-xl-block ">
                     <Container>
                       <h5>
-                        <a href={`https://www.${project.link}`} className="text-white-50" target='_blank' rel='noreferrer'> {project.link} </a>
+                        <a href={`https://${project.link}`} className="text-white-50" target='_blank' rel='noreferrer'> {project.link} </a>
                       </h5>
                     </Container>            
                   </Col>

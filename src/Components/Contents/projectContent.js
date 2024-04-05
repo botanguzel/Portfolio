@@ -1,8 +1,7 @@
 const projectContent = {
     title: 'Botan Guzel - Projects',
-    description: 'Here you can see the details of my projects as well as test them. you can see my projects in my GitHub page'+
-    'as well as download them freely as long as you donot forget to give credit.',
-    link: 'https://github.com/botanguzel',
+    description: 'You can see the details of my projects and test them in my ',
+    link: 'https://github.com/botanguzel?tab=repositories',
     icon_link: 'bi bi-github-fill',
     python: {
         name: 'Python Projects',
@@ -10,7 +9,7 @@ const projectContent = {
             {
                 projectName: 'Search Download & Train',
                 projectDescription: 'This python program makes use of different libraries but mainly uses tkinter as GUI and'+
-                'tensorflow to train the machine. User needs to provide its own Google API-key and Google Custom Search'+
+                ' tensorflow to train the machine. User needs to provide its own Google API-key and Google Custom Search'+
                 ' Engine ID in order to login to application. Then the user can adjust the search settings as they wish before bulk'+
                 ' downloading the images. After the download process has finished the program automatically locks itself from further'+
                 ' search and begins to training process. The training process time completely depends on the amount of images that will'+
@@ -34,13 +33,6 @@ const projectContent = {
         name: 'Java Projects',
         items: [
             {
-                projectName: 'Calculator',
-                projectDescription: 'A simple calculator app made with Java to demonstrate how to use state and classes. It is easy to use'+
-                'but does not have all the functionality of a complex calculator.',
-                projectImg: '/images/calc.jpg',
-                imgAlt: 'Calculator image'
-            },
-            {
                 projectName: 'Simulator',
                 projectDescription: 'A simulator app, that simulates a supermarket and its customers. Basically simulates a supermarket with'+
                 'given inputs (\'cash register, max amount of customers, picking time, payment time, seed\'). Then the application will'+
@@ -55,14 +47,22 @@ const projectContent = {
         name: 'HTML Projects',
         items: [
             {
-                projectName: 'BirCözum',
+                projectName: 'OneSolution - website is under construction',
                 projectDescription: 'This website was built with HTML, PHP and Python, and it is locally hosted. This website shows three'+
                 ' events in a small town named Seyrek in Turkey. After registering to the site, the users can add/edit/remove complaints or'+
                 ' suggestions for the town. Those complaints or suggestions are power and water outages, animal problems (Turkey have alot of'+
                 ' stray dogs and cats on the streets and some of them can get violent at some times), and lastly other problems where users'+
                 ' can share whatever their problem or suggestion is. Complaints are shown in a seperate page with its own map and complaints'+
                 ' are shown clearly on the map each with their own icon, and suggestions are shown in the same way on another page.',
-                link: 'bircözum.com',
+                link: 'onesolution.botanguzel.com',
+            },
+            {
+                projectName: 'RecipeBox',
+                projectDescription: 'This is a recipe website, where users can find different recipes. The database for recipes was created by me'+
+                ' through web scraping and I have applied some general changes to make it fit to the website. The users can create find recipes'+
+                ' without creating an account. However, if they choose to create an account then they can add comments, save the recipes and rate'+
+                ' them. It is an simple to use website to find different recipes.',
+                link: 'recipebox.botanguzel.com',
             },
             {
                 projectName: 'BotanGuzel',
