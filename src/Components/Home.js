@@ -47,9 +47,6 @@ const Home = () => {
           technical prowess, and innovative solutions. From software development to algorithmic mastery, Botan's portfolio offers a glimpse into his dedication to excellence in the realm of programming. 
           Whether you're seeking insights, collaboration opportunities, or simply inspiration, Botan Guzel's portfolio is your destination for discovering the artistry and proficiency of a skilled programmer."
         />
-        /**
-          <meta property="og:image" content="URL of an image to represent your app" />
-        */
         <meta property="og:url" content="https://www.botanguzel.com/" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>

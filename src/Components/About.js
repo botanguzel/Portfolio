@@ -77,9 +77,6 @@ const About = () => {
           Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams. 
           Dive into Botan's world as he shares his educational background, professional experiences, and coding skills."
         />
-        /**
-          <meta property="og:image" content="URL of an image to represent your app" />
-        */
         <meta property="og:url" content="https://www.botanguzel.com/About" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>

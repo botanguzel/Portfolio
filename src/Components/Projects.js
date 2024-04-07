@@ -44,9 +44,6 @@ const Projects = () => {
           Discover projects like 'Search Download & Train', 'Simulator', and more, each offering unique functionalities and insights into Botan's coding prowess. 
           Visit Botan's GitHub page for further details and to explore the source code."
         />
-        /**
-          <meta property="og:image" content="URL of an image to represent your app" />
-        */
         <meta property="og:url" content="https://www.botanguzel.com/Projects" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>
