@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { homeContent, PythonSection, JavaSection, HtmlSection } from './Contents/homeContent'; // Adjust the path to your TextContent.js file
 import VerticalCarousel from './VerticalCarousel';
 import '../Styles/home.css';
@@ -19,6 +20,39 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{homeContent.pageTitle}</title>
+        <meta name="description" content="Home - Botan Guzel" />
+        <meta charset="utf-8" />
+        <link rel="icon" href="/images/me.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <meta
+          name="description"
+          content="Delve into the coding expertise and creative endeavors of Botan Guzel, 
+          through his meticulously crafted portfolio website. Navigate through Botan Guzel's Portfolio to explore a showcase of programming projects, 
+          technical prowess, and innovative solutions. From software development to algorithmic mastery, Botan's portfolio offers a glimpse into his dedication to excellence in the realm of programming. 
+          Whether you're seeking insights, collaboration opportunities, or simply inspiration, Botan Guzel's portfolio is your destination for discovering the artistry and proficiency of a skilled programmer."
+        />
+        <meta
+          name="keywords"
+          content="Botan, Botan Guzel, Botan Guzel - CV, Botan Guzel Portfolio"
+        />
+        <meta property="og:title" content={homeContent.pageTitle} />
+        <meta
+          property="og:description"
+          content="Delve into the coding expertise and creative endeavors of Botan Guzel, 
+          through his meticulously crafted portfolio website. Navigate through Botan Guzel's Portfolio to explore a showcase of programming projects, 
+          technical prowess, and innovative solutions. From software development to algorithmic mastery, Botan's portfolio offers a glimpse into his dedication to excellence in the realm of programming. 
+          Whether you're seeking insights, collaboration opportunities, or simply inspiration, Botan Guzel's portfolio is your destination for discovering the artistry and proficiency of a skilled programmer."
+        />
+        /**
+          <meta property="og:image" content="URL of an image to represent your app" />
+        */
+        <meta property="og:url" content="https://www.botanguzel.com/" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      </Helmet>
       <div className='bg-dark'>
         <Container className="px-5">
           <Row className="gx-5 align-items-center justify-content-center">

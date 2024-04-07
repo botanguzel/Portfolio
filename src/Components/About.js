@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import aboutContent from './Contents/aboutContent';
 import StackedProgressbar from './StackedProgressbar';
 import { Container, Row, Col, Accordion, Card, Badge, Stack, Button, useAccordionButton } from 'react-bootstrap';
@@ -51,6 +52,37 @@ const About = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{aboutContent.pageTitle}</title>
+        <meta name="description" content="About - Botan Guzel" />
+        <meta charset="utf-8" />
+        <link rel="icon" href="/images/me.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <meta
+          name="description"
+          content="Discover the journey and coding expertise of Botan Guzel, a dedicated computer engineering student at Luleå University of Technology. 
+          Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams. 
+          Dive into Botan's world as he shares his educational background, professional experiences, and coding skills."
+        />
+        <meta
+          name="keywords"
+          content="Botan, Botan Guzel, Botan Guzel - CV, Botan Guzel Portfolio"
+        />
+        <meta property="og:title" content={aboutContent.pageTitle} />
+        <meta
+          property="og:description"
+          content="Discover the journey and coding expertise of Botan Guzel, a dedicated computer engineering student at Luleå University of Technology. 
+          Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams. 
+          Dive into Botan's world as he shares his educational background, professional experiences, and coding skills."
+        />
+        /**
+          <meta property="og:image" content="URL of an image to represent your app" />
+        */
+        <meta property="og:url" content="https://www.botanguzel.com/About" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      </Helmet>
       <div className="bg-dark">
         <Container className="px-5">
           <Row className="gx-5 align-items-center justify-content-center">
