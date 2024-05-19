@@ -22,7 +22,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          {/* Add the 404 route as the last one */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

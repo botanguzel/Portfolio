@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="text-center bg-dark text-white-50">
         <Container className="p-4">
         <hr></hr>
-            <section className="mb-4"> {/** Buttons */}
+            <section className="mb-4">
                 <Row>
                     <Col> <h4> {footerContent.title} </h4> </Col>
                     <Col>

@@ -7,19 +7,17 @@ const projectContent = {
         name: 'Python Projects',
         items: [
             {
-                projectName: 'Search Download & Train',
+                projectName: 'Search Download',
                 projectDescription: 'This python program makes use of different libraries but mainly uses tkinter as GUI and'+
-                ' tensorflow to train the machine. User needs to provide its own Google API-key and Google Custom Search'+
-                ' Engine ID in order to login to application. Then the user can adjust the search settings as they wish before bulk'+
-                ' downloading the images. After the download process has finished the program automatically locks itself from further'+
-                ' search and begins to training process. The training process time completely depends on the amount of images that will'+
-                ' be processed. Then the trained machine output will be saved to a folder choosen by user or system default.',
+                ' Google Custom Search API. User needs to provide its own Google API-key and Google Custom Search'+
+                ' Engine ID in order to login to application. Then the user can adjust the search settings as they wish before they'+
+                ' start bulk downloading. This is still a Work-In-Progress project that I plan to use together with ML-image recognition, and generations.',
                 projectImg: '/images/search&train.jpg',
-                imgAlt: 'Search & Train Image'
+                imgAlt: 'Search & Download Image'
             },
             {
                 projectName: 'Hangman',
-                projectDescription:'This is a hangman game. With this project i demonstrated how tKinter-library could be specialized.'+
+                projectDescription:'This is a simple hangman game. With this project i demonstrated how tKinter-library could be specialized.'+
                 ' This game shows an image of a guy being hanged as the wrong letters have been chosen. There are different difficulty'+
                 ' levels such as beginner, intermediate and hard. It supports two language, however I have made the language packs as'+
                 ' \'.txt\' files which lets the user to easily change the language. Apart from this, there is a time-mode as well which'+
@@ -35,9 +33,10 @@ const projectContent = {
             {
                 projectName: 'Simulator',
                 projectDescription: 'A simulator app, that simulates a supermarket and its customers. Basically simulates a supermarket with'+
-                'given inputs (\'cash register, max amount of customers, picking time, payment time, seed\'). Then the application will'+
-                'simulate supermarket for 10 seconds, and return each and every event that happened, with all the details such as event type'+
-                'event time, customer number etc.',
+                ' given inputs (\'cash register, max amount of customers, picking time, payment time, seed\'). Then the application will'+
+                ' simulate supermarket for 10 seconds, and return each and every event that happened, with all the details such as event type'+
+                ' event time, customer number etc. Currently uses binary search algorithm to calculate the most optimal amount of registers that will'+
+                ' yield the least amount of missed customers.',
                 projectImg: '/images/sim.jpg',
                 imgAlt: 'Simulator image'
             },
@@ -54,7 +53,7 @@ const projectContent = {
                 ' stray dogs and cats on the streets and some of them can get violent at some times), and lastly other problems where users'+
                 ' can share whatever their problem or suggestion is. Complaints are shown in a seperate page with its own map and complaints'+
                 ' are shown clearly on the map each with their own icon, and suggestions are shown in the same way on another page.',
-                link: 'onesolution.botanguzel.com',
+                link: 'Contact me if you want to see the current situation of this project',
             },
             {
                 projectName: 'RecipeBox',
@@ -68,7 +67,7 @@ const projectContent = {
                 projectName: 'BotanGuzel',
                 projectDescription: 'This website have been built with React and this is my portfolio where organizations or people can see'+
                 ' information about me and if they choose so, they can view my CV too.',
-                link: 'botanguzel.com',
+                link: 'www.botanguzel.com',
             },
         ],
     }
