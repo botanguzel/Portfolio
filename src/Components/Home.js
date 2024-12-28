@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { homeContent, PythonSection, JavaSection, HtmlSection } from './Contents/homeContent'; // Adjust the path to your TextContent.js file
+import { homeContent, PythonSection, JavaSection, HtmlSection } from './Contents/homeContent';
 import VerticalCarousel from './VerticalCarousel';
 import '../Styles/home.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Stack } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
+import StackedProgressbar from './StackedProgressbar';
 
 
 const Home = () => {
@@ -22,39 +23,69 @@ const Home = () => {
     <div>
       <Helmet>
         <title>{homeContent.pageTitle}</title>
-        <meta name="description" content="Home - Botan Guzel" />
-        <meta charset="utf-8" />
-        <link rel="icon" href="/images/me.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        {/* Meta Description */}
         <meta
           name="description"
-          content="Delve into the coding expertise and creative endeavors of Botan Guzel, 
-          through his meticulously crafted portfolio website. Navigate through Botan Guzel's Portfolio to explore a showcase of programming projects, 
-          technical prowess, and innovative solutions. From software development to algorithmic mastery, Botan's portfolio offers a glimpse into his dedication to excellence in the realm of programming. 
-          Whether you're seeking insights, collaboration opportunities, or simply inspiration, Botan Guzel's portfolio is your destination for discovering the artistry and proficiency of a skilled programmer."
+          content="Explore the coding expertise and creative projects of Botan Guzel, a skilled computer engineer. Visit Botan's portfolio to see a showcase of his technical abilities, programming projects, and problem-solving skills in languages like Python, Java, C#, and React."
         />
+        {/* Meta Charset */}
+        <meta charset="utf-8" />
+        {/* Favicon */}
+        <link rel="icon" href="/images/me.png" />
+        {/* Meta Viewport for Mobile Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Theme Color for Browser UI */}
+        <meta name="theme-color" content="#000000" />
+        {/* External CSS (Bootstrap Icons) */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        {/* Keywords for SEO */}
         <meta
           name="keywords"
-          content="Botan, Botan Guzel, Botan Guzel - CV, Botan Guzel Portfolio"
+          content="Botan Guzel, Portfolio, Programming, Developer, Software Engineer, Python, Java, React, C#, Projects, Algorithms"
         />
+        {/* Open Graph Meta Tags for Social Media */}
         <meta property="og:title" content={homeContent.pageTitle} />
         <meta
           property="og:description"
-          content="Delve into the coding expertise and creative endeavors of Botan Guzel, 
-          through his meticulously crafted portfolio website. Navigate through Botan Guzel's Portfolio to explore a showcase of programming projects, 
-          technical prowess, and innovative solutions. From software development to algorithmic mastery, Botan's portfolio offers a glimpse into his dedication to excellence in the realm of programming. 
-          Whether you're seeking insights, collaboration opportunities, or simply inspiration, Botan Guzel's portfolio is your destination for discovering the artistry and proficiency of a skilled programmer."
+          content="Explore the coding expertise and creative projects of Botan Guzel. Visit Botan's portfolio to see his programming skills and projects in languages like Python, Java, React, and more."
         />
         <meta property="og:url" content="https://www.botanguzel.com/" />
+        <meta property="og:image" content="https://www.botanguzel.com/images/me.png" />
+        <meta property="og:type" content="website" />
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={homeContent.pageTitle} />
+        <meta
+          name="twitter:description"
+          content="Explore Botan Guzel's portfolio to discover his expertise in programming and software development. Visit to view projects in Python, Java, React, and more."
+        />
+        <meta name="twitter:image" content="https://www.botanguzel.com/images/me.png" />
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Botan Guzel",
+              "jobTitle": "Computer Engineering Student",
+              "url": "https://www.botanguzel.com/about",
+              "image": "https://www.botanguzel.com/images/me.jpg",
+              "description": "A computer engineering student at Luleå University of Technology.",
+              "sameAs": [
+                "https://www.linkedin.com/in/botanguzel",
+                "https://github.com/botanguzel"
+              ]
+            }
+          `}
+        </script>
+        {/* Web App Manifest */}
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>
       <div className='bg-dark'>
         <Container className="px-5">
           <Row className="gx-5 align-items-center justify-content-center">
-            <Col>
-              <div className="my-5 text-center text-xl-start">
+            <Col className='col-12 col-md-6'>
+              <div className="my-5 text-start text-xl-start">
                 <h1 className="display-5 fw-bolder text-white mb-2">{header.title}</h1>
                 <p className="lead fw-normal text-white-50 mb-4">{header.description}</p>
                 <Row className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start ">
@@ -75,7 +106,7 @@ const Home = () => {
                 </Row>
               </div>
             </Col>
-            <Col className="col-xxl-4 d-xl-block">
+            <Col className="col-12 col-md-6 d-xl-block">
               <Container className='img-container'>
                 <img className="my-1 img-zoom" src="/images/me.png" alt="Logo" />
               </Container>            
@@ -83,7 +114,30 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-        <VerticalCarousel items={sections} />
+        {/* <VerticalCarousel items={sections} /> */}
+        <div className="bg-dark py-5">
+          <Container className="px-4">
+            <Row className="g-5">
+              <Col lg={6} md={12}>
+                <Stack gap={4}>
+                  <StackedProgressbar label="Python" valOne="33.6" valTwo="33.6" valThree="26" />
+                  <StackedProgressbar label="Java" valOne="33.6" valTwo="33.6" valThree="15" />
+                  <StackedProgressbar label="MySQL" valOne="33.6" valTwo="33.6" valThree="14" />
+                  <StackedProgressbar label="C#" valOne="33.6" valTwo="25" valThree="20" />
+                </Stack>
+              </Col>
+              <Col lg={6} md={12}>
+                <Stack gap={4}>
+                  <StackedProgressbar label="HTML" valOne="33.6" valTwo="33.6" valThree="33.6" />
+                  <StackedProgressbar label="JavaScript" valOne="33.6" valTwo="33.6" valThree="33.6" />
+                  <StackedProgressbar label="React" valOne="33.6" valTwo="25" valThree="15" />
+                </Stack>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+
+        
     </div>
     
   );

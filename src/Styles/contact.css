@@ -3,3 +3,16 @@
     font-size: 1.2vw;
     padding-top: 30px;
 }
+
+.accordion-collapse {
+  overflow: hidden;
+  transition: max-height 2.5s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.accordion-collapse.collapsing {
+  max-height: 0px;
+}
+
+.accordion-collapse.collapse {
+  max-height: 1000px;
+}

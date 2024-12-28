@@ -54,30 +54,23 @@ const About = () => {
     <>
       <Helmet>
         <title>{aboutContent.pageTitle}</title>
-        <meta name="description" content="About - Botan Guzel" />
         <meta charset="utf-8" />
         <link rel="icon" href="/images/me.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-        <meta
-          name="description"
-          content="Discover the journey and coding expertise of Botan Guzel, a dedicated computer engineering student at Luleå University of Technology. 
-          Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams. 
-          Dive into Botan's world as he shares his educational background, professional experiences, and coding skills."
-        />
-        <meta
-          name="keywords"
-          content="Botan, Botan Guzel, Botan Guzel - CV, Botan Guzel Portfolio"
-        />
+        {/* Meta Tags for SEO */}
+        <meta name="description" content="Discover the journey and coding expertise of Botan Guzel, a dedicated computer engineering student at Luleå University of Technology. Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams." />
+        <meta name="keywords" content="Botan, Botan Guzel, Botan Guzel - CV, Botan Guzel Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        {/* Social Media Meta Tags */}
         <meta property="og:title" content={aboutContent.pageTitle} />
-        <meta
-          property="og:description"
-          content="Discover the journey and coding expertise of Botan Guzel, a dedicated computer engineering student at Luleå University of Technology. 
-          Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams. 
-          Dive into Botan's world as he shares his educational background, professional experiences, and coding skills."
-        />
-        <meta property="og:url" content="https://www.botanguzel.com/About" />
+        <meta property="og:description" content="Discover the journey and coding expertise of Botan Guzel, a dedicated computer engineering student at Luleå University of Technology. Explore Botan's About Me page to learn about his passion for programming, proficiency in languages like Python, Java, C#, and React, and his experience leading projects and collaborating within teams." />
+        <meta property="og:url" content="https://www.botanguzel.com/about" />
+        <meta property="og:image" content="https://www.botanguzel.com/images/me.jpg" />
+        {/* Favicon and Manifest */}
+        <link rel="icon" href="/images/me.jpg" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>
       <div className="bg-dark">
@@ -143,7 +136,7 @@ const About = () => {
                   <Card.Header>
                     <CustomToggle eventKey="1"> <i className={aboutContent.Education.icon}/> {aboutContent.Education.title} </CustomToggle>
                   </Card.Header>
-                  <Accordion.Collapse eventKey="1">
+                  <Accordion.Collapse eventKey="1" key={0}>
                     <Card.Body style={{textAlign:'justify', }} >{aboutContent.Education.description}
                     <hr></hr>
                     {aboutContent.Education.items.map((education, index) => (
@@ -166,7 +159,7 @@ const About = () => {
                   <Card.Header>
                     <CustomToggle eventKey="2"> <i className={aboutContent.Courses.icon}/> {aboutContent.Courses.title} </CustomToggle>
                   </Card.Header>
-                  <Accordion.Collapse eventKey="2">
+                  <Accordion.Collapse eventKey="2" key={1}>
                     <Card.Body style={{textAlign:'justify', }} >
                     {aboutContent.Courses.items.map((course, index) => (
                         <Accordion key={index} style={{textAlign:'justify'}} >
@@ -197,7 +190,7 @@ const About = () => {
                   <Card.Header>
                     <CustomToggle eventKey="3"> <i className={aboutContent.End.icon}/> {aboutContent.End.title} </CustomToggle>
                   </Card.Header>
-                  <Accordion.Collapse eventKey="3">
+                  <Accordion.Collapse eventKey="3" key={2}>
                     <Card.Body>{aboutContent.End.description}
                       <hr></hr>
                       <Container>

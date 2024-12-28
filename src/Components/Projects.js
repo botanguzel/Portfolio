@@ -19,33 +19,52 @@ const Projects = () => {
     <>
       <Helmet>
         <title>{projectContent.pageTitle}</title>
-        <meta name="description" content="Projects - Botan Guzel" />
-        <meta charset="utf-8" />
-        <link rel="icon" href="/images/me.jpg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        {/* Meta Description */}
         <meta
           name="description"
-          content="Explore Botan Guzel's diverse portfolio of projects showcasing his programming skills and creativity. 
-          From Python to Java to HTML projects, dive into a variety of applications and simulations demonstrating Botan's expertise. 
-          Discover projects like 'Search Download', 'Simulator', and more, each offering unique functionalities and insights into Botan's coding prowess. 
-          Visit Botan's GitHub page for further details and to explore the source code."
+          content="Explore Botan Guzel's diverse portfolio of projects that showcase his programming skills in Python, Java, HTML, and more. Discover applications like 'Search Download & Train', 'Simulator', and other unique projects demonstrating his expertise in software development and problem-solving. Visit Botan's GitHub for source code and additional details."
         />
+        {/* Meta Charset */}
+        <meta charset="utf-8" />
+        {/* Favicon */}
+        <link rel="icon" href="/images/me.jpg" />
+        {/* Meta Viewport for Mobile Optimization */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Theme Color for Browser UI */}
+        <meta name="theme-color" content="#000000" />
+
+        {/* External CSS (Bootstrap Icons) */}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+        {/* Keywords for SEO */}
         <meta
           name="keywords"
-          content="Botan, Botan Guzel, Botan Guzel - CV, Botan Guzel Portfolio"
+          content="Botan Guzel, Projects, Portfolio, Software Development, Python, Java, HTML, GitHub, Search Download, Simulator"
         />
+
+        {/* Open Graph Meta Tags for Social Media */}
         <meta property="og:title" content={projectContent.pageTitle} />
         <meta
           property="og:description"
-          content="Explore Botan Guzel's diverse portfolio of projects showcasing his programming skills and creativity. 
-          From Python to Java to HTML projects, dive into a variety of applications and simulations demonstrating Botan's expertise. 
-          Discover projects like 'Search Download & Train', 'Simulator', and more, each offering unique functionalities and insights into Botan's coding prowess. 
-          Visit Botan's GitHub page for further details and to explore the source code."
+          content="Explore Botan Guzel's portfolio of projects showcasing his skills in Python, Java, HTML, and more. From 'Search Download & Train' to 'Simulator', each project demonstrates his programming expertise. Visit Botan's GitHub for code and details."
         />
-        <meta property="og:url" content="https://www.botanguzel.com/Projects" />
+        <meta property="og:url" content="https://www.botanguzel.com/projects" />
+        <meta property="og:image" content="https://www.botanguzel.com/images/me.jpg" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={projectContent.pageTitle} />
+        <meta
+          name="twitter:description"
+          content="Explore Botan Guzel's programming projects, including 'Search Download & Train', 'Simulator', and more. Discover the skills behind his work in Python, Java, HTML, and other technologies."
+        />
+        <meta name="twitter:image" content="https://www.botanguzel.com/images/me.jpg" />
+
+        {/* Web App Manifest */}
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
       </Helmet>
       <div className='bg-dark'>
         <section className='py-5'>
