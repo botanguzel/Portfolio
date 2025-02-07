@@ -1,0 +1,27 @@
+footer {
+    background: linear-gradient(180deg, #1F1F1F, #121212) !important; /* Dark gradient background */
+    color: #D3D3D3 !important; /* Light grey text */
+  }
+  
+  footer a {
+    color: #D3D3D3 !important; /* Light grey for links */
+  }
+  
+  footer a:hover {
+    color: #00BFFF !important; /* Electric blue on hover */
+  }
+  
+  footer .btn-outline-light {
+    border-color: #00BFFF !important; /* Electric blue for buttons */
+    color: #00BFFF !important;
+  }
+  
+  footer .btn-outline-light:hover {
+    background-color: #00BFFF !important;
+    color: #121212 !important;
+  }
+  
+  footer .bi {
+    color: #00BFFF !important; /* Electric blue for icons */
+  }
+  

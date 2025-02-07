@@ -1,16 +1,29 @@
 /* Home.css */
-.img-container {
-    border-radius: 50%;
-    overflow: hidden; /* Clip the image overflow within the container */
-    max-width: 100%;
-  }
-  .img-zoom {
-    height: 440px;
-  }
-  .img-container img {
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-  }
-  
-  .img-container:hover img {
-    transform: scale(1.15); /* Apply a zoom effect to the image on hover */
-  }
+body {
+  background: rgba(30, 30, 30, 1)!important;
+}
+
+.glowing-effect {
+  width: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+  12vw 43vw 69px 40px rgb(205 60 255), 12vw 44vw 152px 60px rgb(205 60 255 / 70%), 8vw 42vw 140px 90px rgb(205 60 255 / 41%)
+}
+
+
+
+
+/* .btn-outline-light {
+  border-color: #00BFFF !important;
+  color: #00BFFF !important;
+}
+
+.btn-outline-light:hover {
+  background-color: #00BFFF !important;
+  color: #121212 !important;
+} */
+
+.progress-bar {
+  background-color: #39FF14 !important;  /* Neon Green */
+}

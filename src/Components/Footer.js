@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import footerContent from './Contents/footerContent';
 import { Link } from 'react-router-dom';
+import '../Styles/foot.css';
 
 const Footer = () => {
   return (

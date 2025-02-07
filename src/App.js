@@ -7,25 +7,26 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import NotFound from './Components/NotFound';
+import UnderConstruction from './Components/UnderConstruction';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navigation />
+        {/* <Navigation /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact />} /> */}
           <Route path="*" element={<NotFound />} />
+          <Route path="/under_construction" element={<UnderConstruction />} />
         </Routes>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }

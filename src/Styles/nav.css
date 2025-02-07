@@ -1,0 +1,79 @@
+/* Custom navbar styles */
+.navbar {
+  background: linear-gradient(180deg, #1F1F1F, #121212) !important; /* Dark gradient background */
+  color: #D3D3D3 !important; /* Light grey text */
+}
+
+.logo {
+  height: 50%;  /* Match the navbar height */
+  width: 10vw;   /* Maintain aspect ratio */
+}
+.navbar-toggler {
+  display: flex;                /* Use flexbox to arrange the lines */
+  flex-direction: column;       /* Stack the lines vertically */
+  justify-content: space-between; /* Distribute the lines with space between */
+  width: 80px;                  /* Set the width of the button */
+  height: 30px;                 /* Set the height of the button */
+  padding: 0;                   /* Remove padding for exact sizing */
+  background: transparent;      /* Transparent background */
+  border: none!important;                 /* Remove button border */
+  cursor: pointer;             /* Pointer cursor on hover */
+  align-items: center;          /* Center the lines inside the button */
+  transition: transform 0.3s ease;  /* Transition for smooth transform */
+}
+.navbar-toggler:focus {
+  box-shadow: none!important;
+  outline: none!important;
+}
+.navbar-toggler span {
+  display: block;               /* Make each line a block element */
+  width: 80%;                   /* Make each line slightly narrower than the button */
+  height: 4px;                  /* Set thickness of the lines */
+  background-color: #00BFFF;    /* Color of the lines */
+  border-radius: 2px;           /* Optional: rounded edges for the lines */
+  transition: all 0.3s ease;    /* Transition for all changes */
+}
+/* When the navbar is collapsed (default hamburger state) */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: rotate(45deg);     /* Rotate the top line to form part of the 'X' */
+  position: relative;
+  top: 6px;                     /* Move it down a bit for better positioning */
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;                   /* Hide the middle line */
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: rotate(-45deg);    /* Rotate the bottom line to form part of the 'X' */
+  position: relative;
+  bottom: 6px;                  /* Move it up a bit for better positioning */
+}
+
+/* Collapsed state (navbar is hidden) */
+.navbar-collapse {
+  max-height: 10vw;                    /* Collapsed: hide navbar content */
+  overflow: hidden;                 /* Hide content that overflows */
+  transition: max-height 1.5s ease-out; /* Smooth transition for collapse */
+}
+
+/* Expanded state (when navbar is shown) */
+.navbar-collapse.show {
+  max-height: 500px;
+}
+
+.navbar .nav-link {
+  color: #D3D3D3 !important; /* Light grey for nav links */
+}
+
+.navbar .nav-link:hover {
+  color: #00BFFF !important; /* Electric blue on hover */
+}
+
+.navbar .navbar-brand {
+  color: #00BFFF !important; /* Electric blue for brand */
+}
+
+.navbar .navbar-brand:hover {
+  color: #121212 !important; /* Dark color on hover */
+}

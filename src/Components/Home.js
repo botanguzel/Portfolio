@@ -32,7 +32,7 @@ const Home = () => {
         {/* Meta Charset */}
         <meta charset="utf-8" />
         {/* Favicon */}
-        <link rel="icon" href="/images/me.png" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         {/* Meta Viewport for Mobile Optimization */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Theme Color for Browser UI */}
@@ -81,12 +81,14 @@ const Home = () => {
         {/* Web App Manifest */}
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>
-      <div className='bg-dark'>
+      <div className='bg'>
         <Container className="px-5">
           <Row className="gx-5 align-items-center justify-content-center">
             <Col className='col-12 col-md-6'>
               <div className="my-5 text-start text-xl-start">
-                <h1 className="display-5 fw-bolder text-white mb-2">{header.title}</h1>
+              <div className="glowing-effect"></div>
+
+                <h1 className="display-5 fw-bolder text-center text-white mb-2">{header.title}</h1>
                 <p className="lead fw-normal text-white-50 mb-4">{header.description}</p>
                 <Row className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start ">
                   <Col>
@@ -99,23 +101,19 @@ const Home = () => {
                   <Col>
                   <Link to='/Contact'>
                     <Button style={{width: '100%'}} variant="dark" className="btn-outline-light m-3" size='lg'>
-                      <i className="bi bi-eye-fill"></i>{' '}{header.contactButton}
+                      <i className="bi bi-eye-fill"></i>{' '}{header.projectButton}
                     </Button>
                   </Link>
                   </Col>
                 </Row>
               </div>
             </Col>
-            <Col className="col-12 col-md-6 d-xl-block">
-              <Container className='img-container'>
-                <img className="my-1 img-zoom" src="/images/me.png" alt="Logo" />
-              </Container>            
-            </Col>
+            
           </Row>
         </Container>
       </div>
         {/* <VerticalCarousel items={sections} /> */}
-        <div className="bg-dark py-5">
+        <div className="bg py-5">
           <Container className="px-4">
             <Row className="g-5">
               <Col lg={6} md={12}>

@@ -1,15 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../Styles/nav.css';
 
 const Navigation = () => {
   return (
     <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container px-5">
         <NavLink className="navbar-brand" to="/">
-          Botan Güzel
+          <img className='logo' src="images/favicon.ico" alt="Logo" />
         </NavLink>
+        
         <button
-          className="navbar-toggler"
+          className="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -17,8 +19,12 @@ const Navigation = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+
+        
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">

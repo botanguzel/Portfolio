@@ -1,0 +1,32 @@
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #b7a282!important;
+}
+body {
+    background-image: url('../../public/favicon.ico'); /* Path to the background image */
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Ensures the background image doesn't repeat */
+    height: 100vh; /* Ensures the background covers the entire viewport height */
+    margin: 0; /* Removes default margin to prevent unwanted spaces */
+  }
+p {
+    font-size: 1.2rem;
+    color: #b7a282!important;
+}
+
+a {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #b7a282!important;
+}
+a:hover {
+    color: #846a47!important;
+}
+
+.construction-icon {
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+}

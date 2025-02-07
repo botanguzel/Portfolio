@@ -1,0 +1,29 @@
+<Col className="col-12 col-md-6 d-xl-block">
+    <Container className='img-container'>
+        <img className="my-1 img-zoom" src="/images/me.png" alt="Logo" />
+    </Container>            
+</Col>
+
+img.my-1.img-zoom {
+    transition: transform 0.3s ease !important;
+}
+  
+img.my-1.img-zoom:hover {
+transform: scale(1.1) !important;
+}
+
+.img-container {
+    border-radius: 50%;
+    overflow: hidden; /* Clip the image overflow within the container */
+    max-width: 100%;
+}
+.img-zoom {
+    height: 440px;
+}
+.img-container img {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.img-container:hover img {
+    transform: scale(1.15); /* Apply a zoom effect to the image on hover */
+}

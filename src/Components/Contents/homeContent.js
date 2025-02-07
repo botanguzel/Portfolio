@@ -9,7 +9,7 @@ const homeContent = {
       'I am engaged in further developing my knowledge and can effectively lead smaller projects as well as collaborte in teams.\n'+
       'I have proficiency in a variety of programming languages including Python, Java, C# and React.',
       aboutButton: 'About Me',
-      contactButton: 'Contact Me',
+      projectButton: 'My Projects',
     },
     python: {
       title: 'Python Projects',
